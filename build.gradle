@@ -1,0 +1,16 @@
+apply plugin: 'java'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    implementation 'junit:junit:4.9'
+    testImplementation 'junit:junit:4.9'
+}
+
+jar {
+    manifest {
+        attributes('Main-Class': 'jmelt.Melting')
+    }
+}
